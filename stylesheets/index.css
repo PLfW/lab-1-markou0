@@ -1,0 +1,157 @@
+*{
+	font-size: 1pc;
+	padding:0;
+	color:DarkCyan;
+}
+
+body
+{
+	margin: 1rem 3rem;
+	margin-top: 0;
+}
+
+.top-container
+{
+	display: table;
+	margin:auto;
+	text-align: center;
+}
+
+.logo
+{
+	height:7rem;
+	width:7rem;
+	border-radius: 50%;
+	border:0.2rem solid grey;
+	margin: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.title{
+	display: inline-block;
+	margin:1rem;
+	vertical-align: middle;
+}
+
+h1,h2{
+	text-align: center;
+
+}
+
+h1
+{
+	font-size: 2em;
+}
+
+h2
+{
+	font-size: 1.5em;
+}
+
+.menu-container
+{
+	display: table;
+	margin:auto;
+	text-align: center;
+}
+
+.menu-container ul li
+{
+	display: inline-block;
+	padding: 0.5em;
+	font-size: 1.5rem;
+	background-color: LightSeaGreen;
+	color: white;
+	box-shadow: 0 0.2em 0.4em 0 rgba(0,0,0,0.5);
+	border-radius: 0.2em;
+	margin-bottom: 1.5rem;
+}
+
+.menu-container ul li:hover
+{
+	background-color: black;
+}
+
+.main-aside
+{
+	width: 18%;
+	vertical-align: top;
+	display: table-cell;
+}
+
+.main-aside ul
+{
+	background-color: PaleGreen ;
+	color:DarkCyan;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+}
+
+.main-aside ul li
+{
+	display: block;
+	border: 0.1em solid DarkCyan;
+	font-size: 1.2rem;
+	padding:0.3em;
+	border-radius: 0.2em;
+	margin-bottom: 0.2em;
+	text-align: center;
+}
+
+.main-aside ul li:hover
+{
+	color: PaleGreen ;
+	background-color:DarkCyan;
+}
+
+.articles-container{
+	width:55%;
+	display: table-cell;
+}
+
+.articles-container article
+{
+	width: 95%;
+	border:0.1em solid #ceebfd ;
+	padding: 0.5em;
+	margin: 2em auto;
+	margin-top: 0;
+	box-sizing :border-box;
+}
+
+footer
+{
+	width: 100%;
+	text-align: center;
+	background-color: #ceebfd ;
+	padding: 0.5em;
+	color:DarkCyan   ;
+	margin-top: 1em;
+	border-radius: 0.2em;
+	box-sizing :border-box;
+
+}
+
+@media only screen and (max-width: 768px){
+
+	.main-aside, .articles-container, .articles-container article, .top-container, .menu-container{
+		width:100%;	
+		display: block;
+	}
+
+	.main-aside, .articles-container, .top-container, .menu-container{
+		margin: 2rem auto;
+		margin-top: 0;
+	}
+
+	.menu-container ul li
+	{
+		display: block;
+		padding: 0.5em;
+		font-size: 1.5rem;
+		box-shadow: 0 0.2em 0.4em 0 rgba(0,0,0,0.5);
+		border-radius: 0.2em;
+		margin-bottom: 0.5rem;
+	}
+}
