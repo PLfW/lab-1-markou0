@@ -2,10 +2,20 @@
 	font-size: 1pc;
 	padding:0;
 	color:DarkCyan;
+	margin:0;
 }
 
-body
-{
+html{
+	height: 100%;
+}
+
+body {
+	position: absolute;
+	min-height: 100%;
+}
+
+.content-container{
+	padding-bottom: 3em;
 	margin: 1rem 3rem;
 	margin-top: 0;
 }
@@ -14,6 +24,7 @@ body
 {
 	display: table;
 	margin:auto;
+	margin-top: 1rem;
 	text-align: center;
 }
 
@@ -31,7 +42,12 @@ body
 .title{
 	display: inline-block;
 	margin:1rem;
+	margin-bottom: 0;
 	vertical-align: middle;
+}
+
+.title *{
+	margin-bottom: 1em;
 }
 
 h1,h2{
@@ -51,24 +67,27 @@ h2
 
 .menu-container
 {
-	display: table;
-	margin:auto;
-	text-align: center;
+	background-color: LightSeaGreen;
+	margin:1.5rem 0;
+	box-shadow: 0 0.2em 0.4em 0 rgba(0,0,0,0.5);
 }
 
-.menu-container ul li
+.menu{
+	display: table;
+	text-align: center;
+	margin: 0.5rem auto;
+}
+
+.menu ul li
 {
 	display: inline-block;
 	padding: 0.5em;
 	font-size: 1.5rem;
 	background-color: LightSeaGreen;
 	color: white;
-	box-shadow: 0 0.2em 0.4em 0 rgba(0,0,0,0.5);
-	border-radius: 0.2em;
-	margin-bottom: 1.5rem;
 }
 
-.menu-container ul li:hover
+.menu ul li:hover
 {
 	background-color: black;
 }
@@ -107,6 +126,7 @@ h2
 
 .articles-container{
 	width:55%;
+	min-height: 100%;
 	display: table-cell;
 }
 
@@ -123,21 +143,29 @@ h2
 footer
 {
 	width: 100%;
+	height: 1rem;
 	text-align: center;
 	background-color: #ceebfd ;
-	padding: 0.5em;
+	padding: 2em;
+	padding-bottom: 3em;
 	color:DarkCyan   ;
-	margin-top: 1em;
-	border-radius: 0.2em;
-	box-sizing :border-box;
+	margin-top: 2em;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	box-sizing: border-box;
 
 }
 
 @media only screen and (max-width: 768px){
 
-	.main-aside, .articles-container, .articles-container article, .top-container, .menu-container{
+	.main-aside, .articles-container, .articles-container article, .top-container, .menu{
 		width:100%;	
 		display: block;
+	}
+
+	.menu-container{	
+		padding: 0.5em;
 	}
 
 	.main-aside, .articles-container, .top-container, .menu-container{
@@ -145,13 +173,14 @@ footer
 		margin-top: 0;
 	}
 
-	.menu-container ul li
+	.menu ul li
 	{
+		width: 80%;
 		display: block;
 		padding: 0.5em;
 		font-size: 1.5rem;
-		box-shadow: 0 0.2em 0.4em 0 rgba(0,0,0,0.5);
+		border: 0.1rem solid #6BD5D1;
 		border-radius: 0.2em;
-		margin-bottom: 0.5rem;
+		margin: 0.5rem auto;
 	}
 }
